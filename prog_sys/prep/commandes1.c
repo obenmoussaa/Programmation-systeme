@@ -69,7 +69,14 @@ int main(int argc, char *argv[])
     	   
     	} 
     }  
- 
+    /*for(int i=0; i<nb_commandes; i++){
+    int wstatus;
+    pid_t rpid= waitpid(-1,&wstatus,0);
+    exit_if(rpid==-1,"waitpid");
+    if(WIFEXITED(wstatus)){
+        fprintf(stderr,"my son ");
+    }
+   }*/
     
     
     return EXIT_SUCCESS;
